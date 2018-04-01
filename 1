@@ -1,1 +1,39 @@
-网页
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background:orange;
+        }
+        @keyframes myfirst{
+            0%{opacity:0;}
+            50%{opacity:100;}
+            75%{opacity:0;}
+            100%{opacity:0;}
+        }
+        @keyframes two{
+            0%{opacity:0;}
+            50%{opacity:0;}
+            75%{opacity:100;}
+            100%{opacity:0;}
+        }
+        p{
+            text-align: center;
+            width: 100%;
+            font-size: 50px;
+        }
+        #qq{
+            animation: myfirst 5s infinite;
+        }
+        #ww{
+            animation: two 5s infinite;
+        }
+    </style>
+</head>
+<body>
+<p id="qq">在看，在看</p>
+<p id="ww">就把我喝掉</p>
+</body>
+</html>
