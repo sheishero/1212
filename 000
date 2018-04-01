@@ -3,37 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <style>
-        body{
-            background:orange;
+    <style type="text/css">
+        html,body,page{
+            width:100%;
+            height:100%;
+            margin:0;
         }
-        @keyframes myfirst{
-            0%{opacity:0;}
-            50%{opacity:100;}
-            75%{opacity:0;}
-            100%{opacity:0;}
+        page{
+            font-size:150px;
+            position: absolute;
+            padding-top: 200px;
+            padding-left: 700px;
         }
-        @keyframes two{
-            0%{opacity:0;}
-            50%{opacity:0;}
-            75%{opacity:100;}
-            100%{opacity:0;}
+        #c{
+            background-color: #adff77;
+            animation:ct 8s infinite;
         }
-        p{
-            text-align: center;
-            width: 100%;
-            font-size: 50px;
+        #x{
+            background-color: #fff297;
+            animation:xt 8s infinite;
         }
-        #qq{
-            animation: myfirst 5s infinite;
+        #q{
+            background-color: #ff8d3b;
+            animation:qt 8s infinite;
         }
-        #ww{
-            animation: two 5s infinite;
+        #d{
+            background-color: #cdf1ff;
+            animation:dt 8s infinite;
+        }
+        @keyframes ct {
+            0%{opacity: 0}
+            20%{opacity: 100}
+            40%{opacity: 0}
+            60%{opacity:0}
+            100%{opacity: 0}
+        }
+        @keyframes xt {
+            0%{opacity: 0}
+            20%{opacity: 0}
+            40%{opacity:100}
+            60%{opacity:0}
+            100%{opacity: 0}
+        }
+        @keyframes qt {
+            0%{opacity: 0}
+            20%{opacity:0}
+            40%{opacity: 0}
+            60%{opacity:100}
+            100%{opacity: 0}
+        }
+        @keyframes dt {
+            0%{opacity: 0}
+            20%{opacity:0}
+            40%{opacity: 0}
+            60%{opacity: 0}
+            80%{opacity:100}
+            100%{opacity: 0}
         }
     </style>
 </head>
 <body>
-<p id="qq">在看，在看</p>
-<p id="ww">就把我喝掉</p>
+<page id="c">春</page>
+<page id="x">夏</page>
+<page id="q">秋</page>
+<page id="d">冬</page>
+
 </body>
 </html>
